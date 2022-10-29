@@ -247,8 +247,8 @@ body{
     background: #fff;
     box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
     border-radius: 8px;
-    max-width: 300px;
     margin: 0 12px;
+    max-width: 300px;
 }
 #main-1 .col:hover,.col:hover .icon,.col:hover .content-header, .col:hover .content-footer{
     background-color:#007aff ;
@@ -735,7 +735,7 @@ body{
     color:#3c3c3c;
     float: right;
     margin-top: -40px;
-    display:inline-block;
+    display:block;
 }
 .ti-plus{ margin-right: 32px;}
 .ti-link{ margin-right: auto;}
