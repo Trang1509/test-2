@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>New Post</h1>            
+            <h1>Create New Post</h1>            
           </div>
         </div>
       </div>
@@ -26,7 +26,8 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">        
         <!-- for browser to know tha tthe form contains mutli media. will encripy multie media and send to server -->
-        <form action="/posts/store" method="POST">
+        <form action="/posts/store" method="POST" enctype="multipart/form-data">
+          <!--thêm enctype để báo cho trình duyệt biết là form cớ chứa dữ liệu multimedia--> 
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Title</label>
@@ -35,9 +36,9 @@
           </div>   
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
-              <label>Content</label>
-              <textarea rows="5" class="form-control" placeholder="Content"  id="body" name="body"></textarea>              
-            </div>
+              <label>Image</label>
+              <input type="file" class="formcontrol" id="image" name="image">
+              </div>
           </div>  
           <br>                    
           <div class="form-group">
